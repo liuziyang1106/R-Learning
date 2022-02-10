@@ -24,3 +24,11 @@ print(b)
 # 倒序排列
 a_t <- arrange(birthwt, -bwt)
 print(a_t)
+
+# 使用mutate 添加新变量。
+x <- mutate(birthwt, lwt.kg = lwt*0.4536)
+print(x)
+
+# 使用 summarise 计算统计量
+sumarize <- summarise(birthwt, Mean.bwt = mean(bwt), Sd.bwt = sd(bwt))
+print(sumarize)
