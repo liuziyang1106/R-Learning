@@ -1,0 +1,10 @@
+# 加载epiDisplay包里的小型数据集
+library(epiDisplay)
+data(Familydata)
+ls()
+head(Familydata)
+tail(Familydata)
+names(Familydata)
+str(Familydata)
+attributes(Familydata)
+des(Familydata)
