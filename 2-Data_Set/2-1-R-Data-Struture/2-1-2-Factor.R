@@ -12,3 +12,9 @@ print(sex.f1)
 # 方法二
 sex.f1 <- relevel(sex.f, ref = "Female")
 print(sex.f1)
+
+# 有序因子 在定义时将 ordered 设置为 TRUE
+status <- c(1, 2, 2, 3, 1, 2, 2)
+status.f <- factor(status, levels = c(1, 2, 3)
+                  , labels = c("poor", "improved", "excellent"), ordered = TRUE)
+print(status.f)
